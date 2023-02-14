@@ -16,7 +16,7 @@ To run the microservice application, open the "serverApp" project in Visual Stud
 
 Requirements:
 
-Visual Studio
+Visual Studio \n
 Newtonsoft.Json NuGetPackage
 
 How to Use
