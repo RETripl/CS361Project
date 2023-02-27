@@ -62,7 +62,7 @@ namespace HomeInv
             {
                 return 10;
             }
-            if(Int32.TryParse(input, out option) && (option <= 4))
+            if(Int32.TryParse(input, out option) && (option <= 5))
             {                
                 return option;
             }
@@ -92,6 +92,12 @@ namespace HomeInv
             }
             Console.WriteLine("\nPlease enter the name of the room the item is in");
             itemRoom = Console.ReadLine();
+            if(itemRoom == "")
+            {
+                Item noroomItem = new Item(itemName);
+                Console.WriteLine($"I've added {itemName} to the list with no room\n\n");
+                return;
+            }
             Item newItem = new Item(itemName, itemRoom);
             Console.WriteLine($"\nI've added {itemName} to the inventory of {itemRoom}\n");
             Items.Add(newItem);
@@ -120,9 +126,11 @@ namespace HomeInv
             Console.WriteLine("\nPlease enter the name of the item you would like to delete: \n" +
                               "or just hit Enter to go back to main menu\n");
             delItem = Console.ReadLine();
-            Console.WriteLine("\n\n\n Are you sure? Items that are deleted are not recoverable \n" +
-                             $"Make sure you really want to delete {delItem}");
-            if(delItem == "")
+            Console.WriteLine("\n\n\n Are you sure? Items that are deleted are not recoverable \n\n" +
+                             $"Make sure you really want to delete {delItem} to proceed type yes." +
+                              "with no text input\n");
+            string safetyMessage = Console.ReadLine();
+            if(delItem == "" || safetyMessage != "yes")
             {
                 return;
             }
@@ -135,7 +143,9 @@ namespace HomeInv
         }
         private void advancedOptions()
         {
-            Console.WriteLine("This is the future home of advanced options");
+            Console.WriteLine("\n\n\nThis is the future home of advanced options\n\n\n" +
+                              "Press Enter\n");
+            Console.ReadLine();
         }
     }
 }
