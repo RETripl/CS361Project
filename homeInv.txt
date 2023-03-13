@@ -1,0 +1,116 @@
+[
+  {
+    "homeName": "Home1",
+    "rooms": [
+      {
+        "name": "Living Room",
+        "items": [
+          { "name": "Sofa" },
+          { "name": "Coffee Table" },
+          { "name": "TV" },
+          { "name": "Bookshelf" }
+        ]
+      },
+      {
+        "name": "Bedroom",
+        "items": [
+          { "name": "Bed" },
+          { "name": "Dresser" },
+          { "name": "Nightstand" },
+          { "name": "Lamp" }
+        ]
+      },
+      {
+        "name": "Bathroom",
+        "items": [
+          { "name": "Toilet" },
+          { "name": "Sink" },
+          { "name": "Shower" },
+          { "name": "Towel Rack" }
+        ]
+      }
+    ]
+  },
+  {
+    "homeName": "Home2",
+    "rooms": [
+      {
+        "name": "Kitchen",
+        "items": [
+          { "name": "Refrigerator" },
+          { "name": "Stove" },
+          { "name": "Sink" },
+          { "name": "Microwave" },
+          { "name": "Dishwasher" }
+        ]
+      },
+      {
+        "name": "Dining Room",
+        "items": [
+          { "name": "Table" },
+          { "name": "Chairs" },
+          { "name": "China Cabinet" }
+        ]
+      },
+      {
+        "name": "Bedroom",
+        "items": [
+          { "name": "Bed" },
+          { "name": "Dresser" },
+          { "name": "Nightstand" },
+          { "name": "Lamp" }
+        ]
+      },
+      {
+        "name": "Bathroom",
+        "items": [
+          { "name": "Toilet" },
+          { "name": "Sink" },
+          { "name": "Shower" },
+          { "name": "Towel Rack" }
+        ]
+      }
+    ]
+  },
+  {
+    "homeName": "Home3",
+    "rooms": [
+      {
+        "name": "Living Room",
+        "items": [
+          { "name": "Sofa" },
+          { "name": "Coffee Table" },
+          { "name": "TV" },
+          { "name": "Bookshelf" }
+        ]
+      },
+      {
+        "name": "Bedroom",
+        "items": [
+          { "name": "Bed" },
+          { "name": "Dresser" },
+          { "name": "Nightstand" },
+          { "name": "Lamp" }
+        ]
+      },
+      {
+        "name": "Bathroom",
+        "items": [
+          { "name": "Toilet" },
+          { "name": "Sink" },
+          { "name": "Shower" },
+          { "name": "Towel Rack" }
+        ]
+      },
+      {
+        "name": "Office",
+        "items": [
+          { "name": "Desk" },
+          { "name": "Chair" },
+          { "name": "Computer" },
+          { "name": "Bookshelf" }
+        ]
+      }
+    ]
+  }
+]

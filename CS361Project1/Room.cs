@@ -9,19 +9,16 @@ namespace HomeInv
     internal class Room
     {
         public string roomName { get; private set; }
-        public List<Item> items = new List<Item>();
-        public int numberOfItems { get; private set; }
-
+        private List<Item> items = new List<Item>();
+        public int numberOfItems { get { return items.Count; } }
         public Room(string room)
         {
             roomName = room;
-            numberOfItems = 0;
         }
 
         public void addItem(Item item)
         {
             items.Add(item);
-            numberOfItems += 1;
         }
 
         public List<Item> RoomInv()
@@ -32,6 +29,11 @@ namespace HomeInv
         public void removeItem(string delItem)
         {
             int index = items.FindIndex(item => item.itemName == delItem);
+            if(index == -1)
+            {
+                Console.WriteLine($"Error: Item {delItem} not found in {roomName}");
+                return;
+            }
             items.RemoveAt(index);
         }
     }

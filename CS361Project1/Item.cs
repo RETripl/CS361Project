@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace HomeInv
 {
-    internal class Item
+    public class Item
     {
         public string itemName { get; private set; }
         public string roomName { get; private set; }
-
+        public string homeName { get; private set; }
         public Item(string item)
         {
             itemName = item;
@@ -19,6 +19,12 @@ namespace HomeInv
         {
             itemName = item;
             roomName = room;
+        }
+        public Item( string item, string room, string home)
+        {
+            itemName = item;
+            roomName = room;
+            homeName = home;
         }
         public void changeItem(string newName)
         {
@@ -30,9 +36,13 @@ namespace HomeInv
         {
             string oldName = roomName;
             roomName = newRoom;
-            Console.WriteLine($"\n{oldName} is now called {roomName}.");
+            Console.WriteLine($"\n{itemName} is now in {roomName}.");
         }
-
-        
+        public void changeHome(string newHome)
+        {
+            string oldName = homeName;
+            homeName = newHome;
+            Console.WriteLine($"\n{itemName} is now in {roomName}");
+        }
     }
 }
